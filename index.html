@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: black; */
+        }
+
+        .pipe {
+            height: 100px;
+            width: 25px;
+            background-color: coral;
+        }
+
+        .myhouse {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .upper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 50%;
+        }
+
+        .lower {
+            height: 50%;
+        }
+
+        .square {
+            background-color: coral;
+            height: 400px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 1rem;
+        }
+
+        .left-square {
+            flex: 33.33%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+        .middle-square,
+        .right-square {
+            flex: 33.3%;
+            gap: 10px;
+        }
+
+        .right-square {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .right-min-squares {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+
+        }
+
+
+
+        .triangle {
+            border-color: blue blue red blue;
+            border-style: solid;
+            border-width: 0px 380px 380px 380px;
+            height: 0px;
+            width: 1px;
+
+
+        }
+
+        .min-square {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            margin: 5px;
+            font-size: 1.5em;
+            text-align: center;
+            flex: 1 1 auto;
+            height: auto;
+            width: 30%;
+
+        }
+
+
+        .lower {
+            display: flex;
+            justify-content: center;
+        }
+
+        .door {
+            height: 100%;
+            width: 100px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knob {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+            margin-right: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="myhouse">
+
+        <div class="triangle">
+            <div class="pipe">
+
+            </div>
+        </div>
+
+        <div class="square">
+            <div class="upper">
+                <div class="left-square">
+                    <div class="min-square">
+
+                    </div>
+                    <div class="min-square">
+
+                    </div>
+                    <div class="min-square">
+
+                    </div>
+                    <div class="min-square">
+
+                    </div>
+                </div>
+                <div class="middle-square">
+
+                </div>
+                <div class="right-square">
+                    <div class="min-square">
+
+                    </div>
+                    <div class="min-square">
+
+                    </div>
+                    <div class="min-square">
+
+                    </div>
+                    <div class="min-square">
+
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="door">
+                    <div class="knob">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
