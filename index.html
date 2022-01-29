@@ -11,13 +11,6 @@
             background-color: #001525;
         }
 
-        /* .pipe {
-            height: 100px;
-            width: 25px;
-            background-color: coral;
-            z-index: 4;
-        } */
-
         .myhouse {
             display: flex;
             justify-content: center;
@@ -39,8 +32,8 @@
 
         .square {
             background-color: #ff9100;
-            height: 400px;
-            width: 500px;
+            height: 26em;
+            width: 30em;
             display: flex;
             flex-direction: column;
             padding: 0 1rem;
@@ -48,10 +41,6 @@
 
         .left-square {
             flex: 33.33%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-
         }
 
         .middle-square,
@@ -60,9 +49,12 @@
             gap: 10px;
         }
 
+        .left-square,
         .right-square {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 3em;
+            justify-content: space-evenly;
         }
 
         .right-min-squares {
@@ -75,19 +67,17 @@
         .triangle::before {
             content: '';
             position: absolute;
-            left: -230px;
-            width: 60px;
-            height: 200px;
+            left: -14em;
+            width: 5em;
+            height: 13em;
             background-color: #ff9100;
-            /* bottom: 0px; */
-            /* z-index: 10000; */
-            top: 30px;
+            top: 3em;
         }
 
         .triangle {
             border-color: transparent transparent #ff9100 transparent;
             border-style: solid;
-            border-width: 0px 380px 380px 380px;
+            border-width: 0px 22em 22em 22em;
             height: 0px;
             width: 1px;
             z-index: -4;
@@ -97,15 +87,11 @@
         }
 
         .min-square {
-            height: 50px;
-            width: 50px;
             background-color: #001525;
-            margin: 5px;
-            font-size: 1.5em;
             text-align: center;
-            flex: 1 1 auto;
-            height: auto;
-            width: 30%;
+            flex: 0 0 auto;
+            height: 4rem;
+            width: 4rem;
 
         }
 
@@ -117,7 +103,7 @@
 
         .door {
             height: 100%;
-            width: 100px;
+            width: 8em;
             background-color: #e36414;
             display: flex;
             justify-content: center;
@@ -125,8 +111,8 @@
         }
 
         .knob {
-            width: 10px;
-            height: 10px;
+            width: 0.5em;
+            height: 0.5em;
             border-radius: 50%;
             background-color: black;
             margin-right: 50%;
@@ -136,59 +122,72 @@
 
 <body>
 
-    <div class="myhouse">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="myhouse">
 
-        <div class="triangle">
-            <div class="pipe">
+                <div class="triangle">
+                    <div class="pipe">
+
+                    </div>
+                </div>
+
+                <div class="square">
+                    <div class="upper">
+                        <div class="left-square">
+                            <div class="min-square">
+
+                            </div>
+                            <div class="min-square">
+
+                            </div>
+                            <div class="min-square">
+
+                            </div>
+                            <div class="min-square">
+
+                            </div>
+                        </div>
+                        <div class="middle-square">
+
+                        </div>
+                        <div class="right-square">
+                            <div class="min-square">
+
+                            </div>
+                            <div class="min-square">
+
+                            </div>
+                            <div class="min-square">
+
+                            </div>
+                            <div class="min-square">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <div class="door">
+                            <div class="knob">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </div>
 
-        <div class="square">
-            <div class="upper">
-                <div class="left-square">
-                    <div class="min-square">
+        <div class="col-md-4">
 
-                    </div>
-                    <div class="min-square">
-
-                    </div>
-                    <div class="min-square">
-
-                    </div>
-                    <div class="min-square">
-
-                    </div>
-                </div>
-                <div class="middle-square">
-
-                </div>
-                <div class="right-square">
-                    <div class="min-square">
-
-                    </div>
-                    <div class="min-square">
-
-                    </div>
-                    <div class="min-square">
-
-                    </div>
-                    <div class="min-square">
-
-                    </div>
-                </div>
-            </div>
-            <div class="lower">
-                <div class="door">
-                    <div class="knob">
-
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="col-md-4">
 
         </div>
 
     </div>
+
 </body>
 
 </html>
