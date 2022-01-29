@@ -11,6 +11,12 @@
             background-color: #001525;
         }
 
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .myhouse {
             display: flex;
             justify-content: center;
@@ -68,8 +74,8 @@
             content: '';
             position: absolute;
             left: -14em;
-            width: 5em;
-            height: 13em;
+            width: 4em;
+            height: 11em;
             background-color: #ff9100;
             top: 3em;
         }
@@ -77,7 +83,7 @@
         .triangle {
             border-color: transparent transparent #ff9100 transparent;
             border-style: solid;
-            border-width: 0px 22em 22em 22em;
+            border-width: 0em 18em 18em 18em;
             height: 0px;
             width: 1px;
             z-index: -4;
@@ -111,8 +117,8 @@
         }
 
         .knob {
-            width: 0.5em;
-            height: 0.5em;
+            width: 1em;
+            height: 1em;
             border-radius: 50%;
             background-color: black;
             margin-right: 50%;
@@ -122,69 +128,62 @@
 
 <body>
 
-    <div class="row">
-        <div class="col-md-4">
-            <div class="myhouse">
+    <div class="container">
 
-                <div class="triangle">
-                    <div class="pipe">
+        <div class="myhouse">
 
+            <div class="triangle">
+                <div class="pipe">
+
+                </div>
+            </div>
+
+            <div class="square">
+                <div class="upper">
+                    <div class="left-square">
+                        <div class="min-square">
+
+                        </div>
+                        <div class="min-square">
+
+                        </div>
+                        <div class="min-square">
+
+                        </div>
+                        <div class="min-square">
+
+                        </div>
+                    </div>
+                    <div class="middle-square">
+
+                    </div>
+                    <div class="right-square">
+                        <div class="min-square">
+
+                        </div>
+                        <div class="min-square">
+
+                        </div>
+                        <div class="min-square">
+
+                        </div>
+                        <div class="min-square">
+
+                        </div>
                     </div>
                 </div>
+                <div class="lower">
+                    <div class="door">
+                        <div class="knob">
 
-                <div class="square">
-                    <div class="upper">
-                        <div class="left-square">
-                            <div class="min-square">
-
-                            </div>
-                            <div class="min-square">
-
-                            </div>
-                            <div class="min-square">
-
-                            </div>
-                            <div class="min-square">
-
-                            </div>
-                        </div>
-                        <div class="middle-square">
-
-                        </div>
-                        <div class="right-square">
-                            <div class="min-square">
-
-                            </div>
-                            <div class="min-square">
-
-                            </div>
-                            <div class="min-square">
-
-                            </div>
-                            <div class="min-square">
-
-                            </div>
                         </div>
                     </div>
-                    <div class="lower">
-                        <div class="door">
-                            <div class="knob">
-
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
-        </div>
-
-        <div class="col-md-4">
 
         </div>
-        <div class="col-md-4">
 
-        </div>
 
     </div>
 
